@@ -39,11 +39,12 @@
 			<Add directory="C:/Users/leoou/OneDrive/Desktop/freetype-2.9.1/include" />
 		</Compiler>
 		<Linker>
-			<Add option="-lmingw32 -lSDL2main  -lSDL2 -lopengl32" />
+			<Add option="-lmingw32  -lSDL2main  -lSDL2 -lopengl32" />
 			<Add option="-lglu32 -lglew32 -lglew32mx" />
+			<Add library="C:/Users/leoou/OneDrive/Desktop/freetype-2.9.1/objs/freetype.a" />
 			<Add directory="C:/Users/leoou/OneDrive/Desktop/glew-2.0.0/lib" />
 			<Add directory="C:/Users/leoou/OneDrive/Desktop/SDL stuff/SDL2-2.0.8/x86_64-w64-mingw32/lib" />
-			<Add directory="C:/Users/leoou/OneDrive/Desktop/freetype-2.3.5-1-bin/lib" />
+			<Add directory="C:/Users/leoou/OneDrive/Desktop/freetype-2.9.1/objs" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Unit filename="sparkles.h" />

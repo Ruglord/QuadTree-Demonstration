@@ -24,12 +24,15 @@
 const int screenWidth = 640;
 const int screenHeight = 640;
 
-struct Character
+struct Character : pulic Sprite
 {
-    GLuint texture; //the texture of the character
     glm::vec2 bearing; //the bearing, or margins of the character
     glm::vec2 size; //the dimensions of the character
     GLuint advance; //the total width the character takes up, including the character width, the horizontal bearing, and the space from the next character
+    Character(int stanW, int stanH)
+    {
+
+    }
 };
 std::map<char,Character> characters;
 int main(int argc, char *argv[])
@@ -79,6 +82,8 @@ for (GLubyte c = 0; c < 128; c++)
     characters.insert(std::pair<GLchar, Character>(c, character));
 }
 
+FT_Done_Face(face);
+FT_Done_FreeType(library);
 
     bool quit = false;
     SDL_Event e;
